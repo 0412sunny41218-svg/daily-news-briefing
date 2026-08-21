@@ -24,7 +24,7 @@ CATEGORY_KEYWORDS = {
     "국제": ["국제 정세", "미중 관계", "국제 경제"],
 }
 
-MAX_PER_CATEGORY = 6  # 카테고리당 최종 기사 수
+MAX_PER_CATEGORY = 4  # 카테고리당 최종 기사 수
 
 KST = timezone(timedelta(hours=9))
 TODAY = datetime.now(KST).strftime("%Y-%m-%d")
