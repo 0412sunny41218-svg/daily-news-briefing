@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>오늘의 국내외 브리핑</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#EDEDE8;
+  --card:#FFFFFF;
+  --card-alt:#F1F0EC;
+  --ink:#232323;
+  --ink-soft:#4A4A45;
+  --mono:#6B6B65;
+  --rule:#DCDBD2;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:'Pretendard',-apple-system,sans-serif;line-height:1.6;
+}
+.wrap{max-width:720px;margin:0 auto;padding:40px 20px 80px;}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.5px;color:var(--mono);margin-bottom:8px;}
+h1{font-family:'Noto Serif KR',serif;font-size:26px;font-weight:700;margin:0 0 6px;letter-spacing:-0.3px;}
+.subtitle{font-family:'Pretendard';font-size:13px;color:var(--mono);margin-bottom:20px;}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
+.chip{
+  font-family:'Pretendard';font-size:12.5px;font-weight:500;color:var(--ink);
+  background:#DDDCD3;padding:6px 14px;border-radius:20px;cursor:pointer;border:none;
+}
+.chip.active{color:#fff;}
+.section-head{display:flex;align-items:center;gap:7px;margin:22px 0 10px;}
+.dot{width:6px;height:6px;border-radius:50%;display:inline-block;}
+.section-head .cat{font-family:'Pretendard';font-size:14.5px;font-weight:500;}
+.section-head .count{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--mono);}
+.card{
+  background:var(--card);border:1px solid var(--rule);border-radius:10px;
+  padding:16px 18px;margin-bottom:12px;
+}
+.card .source{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--mono);margin-bottom:6px;}
+.card h3{font-family:'Noto Serif KR',serif;font-size:16px;font-weight:700;margin:0 0 10px;line-height:1.4;}
+.card .summarybox{background:var(--card-alt);border-radius:8px;padding:10px 12px;margin-bottom:10px;}
+.card .summarybox .label{font-family:'Pretendard';font-weight:500;font-size:11px;margin-bottom:4px;}
+.card .summarybox .text{font-family:'Pretendard';font-size:13px;color:var(--ink-soft);}
+.card a.origin{font-family:'Pretendard';font-size:12px;text-decoration:none;font-weight:500;}
+footer{
+  margin-top:50px;padding-top:18px;border-top:1px solid var(--rule);
+  font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--mono);
+  display:flex;flex-direction:column;gap:4px;
+}
+/* 랜딩페이지 전용 */
+.hero{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:26px 24px;margin-bottom:32px;}
+.hero h2{font-family:'Noto Serif KR',serif;font-size:21px;font-weight:700;line-height:1.5;margin:0 0 18px;}
+.cta{
+  display:flex;align-items:center;justify-content:space-between;
+  background:var(--ink);color:#fff;border-radius:10px;padding:14px 18px;
+  text-decoration:none;font-family:'Pretendard';font-weight:500;font-size:14.5px;
+}
+.recent-title{font-family:'Pretendard';font-weight:500;font-size:14px;color:var(--mono);margin:0 0 12px;}
+.recent-item{
+  display:flex;justify-content:space-between;align-items:center;
+  background:var(--card);border:1px solid var(--rule);border-radius:10px;
+  padding:14px 16px;margin-bottom:10px;text-decoration:none;color:var(--ink);
+}
+.recent-item .rdate{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--mono);margin-bottom:3px;}
+.recent-item .rtitle{font-family:'Noto Serif KR',serif;font-size:15px;font-weight:700;margin-bottom:4px;}
+.recent-item .rcounts{font-family:'Pretendard';font-size:12px;color:var(--mono);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">TODAY BRIEFING</div>
+  <h1 style="margin-bottom:20px;">오늘의 국내외 브리핑</h1>
+
+  <div class="hero">
+    <h2>정치·경제·국제 소식을<br>매일 아침 모아드려요</h2>
+    <a class="cta" href="briefing/2026-08-21.html">
+      <span>오늘(08월 21일) 브리핑 읽기</span>
+      <span>→</span>
+    </a>
+  </div>
+
+  <div class="recent-title">최근 업데이트</div>
+  
+<a class="recent-item" href="briefing/2026-08-21.html">
+  <div>
+    <div class="rdate">2026년 08월 21일 (금)</div>
+    <div class="rtitle">2026-08-21 브리핑</div>
+    <div class="rcounts">정치·시사 2건 · 경제 2건 · 국제 1건</div>
+  </div>
+  <span>›</span>
+</a>
+
+
+  <footer>
+    <span>정치·경제·국제 뉴스 자동 브리핑</span>
+    <span>Claude AI 요약 · 매일 자동 생성 · 최근 24시간 이내 발행 기사만 수록</span>
+  </footer>
+</div>
+</body>
+</html>
